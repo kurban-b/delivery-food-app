@@ -4,7 +4,7 @@ export const loadingCategories = () => {
       await dispatch({
         type: 'categories/loading/start'
       })
-      const res = await fetch('http://localhost/3010/categories');
+      const res = await fetch('http://localhost:3010/categories');
       const json = await res.json();
       dispatch({
         type: 'categories/loading/success',

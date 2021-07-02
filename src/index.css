@@ -6,8 +6,12 @@ body {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 18px;
 }
-h1,h2,h3,h4 {
+h1,h2 {
   font-family: 'Cabin Condensed', sans-serif;
+  margin: 0;
+}
+h3,h4 {
+  font-family: 'Barlow Condensed', sans-serif;
   margin: 0;
 }
 img {
@@ -123,8 +127,55 @@ a {
 .toggle[checked] label {
   background-color: red;
 }
-
 .main .nav {
   padding: 16px 0;
-  background-color: red;
+}
+.main .navbar {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  color: #9D9D9D;
+}
+.category-box .title{
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 40px;
+  padding: 40px 0 20px 0;
+}
+.category-box .odd {
+  background-color: #F7F6F5;
+}
+.products {
+  display: flex;
+  justify-content: flex-start;
+}
+.productCard {
+  width: 288px;
+  height: 360px;
+  padding: 16px 40px;
+  text-align: center;
+  border-radius: 8px;
+  transition: 300ms;
+  margin: 0 18px 40px 18px;
+}
+.productCard .img {
+  padding: 0 20px;
+}
+.productCard .name {
+  color: #9D9D9D;
+  font-size: 24px;
+  margin: 25px 22px;
+}
+.productCard .price {
+  font-size: 32px;
+  color: #E4002B;
+}
+
+.category-box .odd .productCard:hover {
+  background-color: #fff;
+}
+.category-box .edd .productCard:hover {
+  background-color: #F7F6F5;
 }

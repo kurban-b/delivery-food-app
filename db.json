@@ -41,13 +41,20 @@
       "price" : 144,
       "delivery": true,
       "img": null
+    },
+    {
+      "id": 7,
+      "name": "Бургер с индейкой",
+      "price" : 144,
+      "delivery": true,
+      "img": null
     }
   ],
   "categories": [
     {
       "id": 1,
       "name": "Бургеры",
-      "products": [1,2,3]
+      "products": [1,2,3,7]
     },
     {
       "id": 2,
