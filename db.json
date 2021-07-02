@@ -1,0 +1,98 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Гамбургер",
+      "price" : 100,
+      "delivery": true,
+      "img": null
+    },
+    {
+      "id": 2,
+      "name": "Чизбургер",
+      "price" : 140,
+      "delivery": true,
+      "img": null
+    },
+    {
+      "id": 3,
+      "name": "Бигмак",
+      "price" : 180,
+      "delivery": true,
+      "img": null
+    },
+    {
+      "id": 4,
+      "name": "Твистер",
+      "price" : 124,
+      "delivery": true,
+      "img": null
+    },
+    {
+      "id": 5,
+      "name": "Твистер острый",
+      "price" : 144,
+      "delivery": true,
+      "img": null
+    },
+    {
+      "id": 6,
+      "name": "Твистер с индейкой",
+      "price" : 144,
+      "delivery": true,
+      "img": null
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Бургеры",
+      "products": [1,2,3]
+    },
+    {
+      "id": 2,
+      "name": "Твистеры",
+      "products": [4,5,6]
+    },
+    {
+      "id": 3,
+      "name": "Курица",
+      "products": []
+    },
+    {
+      "id": 4,
+      "name": "Баскеты",
+      "products": []
+    },
+    {
+      "id": 5,
+      "name": "Снэки",
+      "products": []
+    },
+    {
+      "id": 6,
+      "name": "Соусы",
+      "products": []
+    },
+    {
+      "id": 7,
+      "name": "Напитки",
+      "products": []
+    },
+    {
+      "id": 8,
+      "name": "Чай и кофе",
+      "products": []
+    },
+    {
+      "id": 9,
+      "name": "Хиты",
+      "products": [5,3]
+    },
+    {
+      "id": 10,
+      "name": "Новое",
+      "products": [6]
+    }
+  ]
+}
