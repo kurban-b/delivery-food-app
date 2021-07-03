@@ -2,20 +2,20 @@ export const loadingCategories = () => {
   return async (dispatch) => {
     try {
       await dispatch({
-        type: 'categories/loading/start'
-      })
-      const res = await fetch('http://localhost:3010/categories');
+        type: "categories/loading/start",
+      });
+      const res = await fetch("/categories");
       const json = await res.json();
       dispatch({
-        type: 'categories/loading/success',
-        payload: json
-      })
+        type: "categories/loading/success",
+        payload: json,
+      });
     } catch (e) {
       await dispatch({
-        type: 'categories/loading/error',
-        payload: e
-      })
-      console.error(e)
+        type: "categories/loading/error",
+        payload: e,
+      });
+      console.error(e);
     }
-  }
-}
+  };
+};

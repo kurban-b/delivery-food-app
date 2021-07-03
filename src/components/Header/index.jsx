@@ -1,14 +1,14 @@
-import React from 'react'
-import HeaderTop from './HeaderTop'
-import HeaderMain from './HeaderMain'
+import React from "react";
+import HeaderTop from "./HeaderTop";
+import HeaderMain from "./HeaderMain";
 
-function Header () {
+function Header() {
   return (
-    <div className={'header'}>
+    <div className={"header"}>
       <HeaderTop />
       <HeaderMain />
     </div>
-  )
+  );
 }
 
 export default Header;

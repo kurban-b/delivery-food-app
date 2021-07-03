@@ -2,6 +2,12 @@ const initialState = {
   products: [],
   loading: false,
   basket: [],
+  address: {
+    street: "",
+    house: "",
+    error: false,
+  },
+  loadingAddOrder: false,
 };
 
 const productsReducer = (state = initialState, action) => {
@@ -36,6 +42,47 @@ const productsReducer = (state = initialState, action) => {
           ...state.basket.filter((item) => item.id !== action.payload.id),
           ...prod.filter((item, index) => index !== prod.length - 1),
         ],
+      };
+    case "address/street/change":
+      return {
+        ...state,
+        address: {
+          ...state.address,
+          error: false,
+          street: action.payload,
+        },
+      };
+    case "address/house/change":
+      return {
+        ...state,
+        address: {
+          ...state.address,
+          error: false,
+          house: action.payload,
+        },
+      };
+    case "address/error":
+      return {
+        ...state,
+        address: {
+          ...state.address,
+          error: true,
+        },
+      };
+    case "order/add/error":
+      return {
+        ...state,
+        loadingAddOrder: true,
+      };
+    case "order/add/success":
+      return {
+        ...state,
+        loadingAddOrder: false,
+        basket: [],
+        address: {
+          ...state.address,
+          error: false,
+        },
       };
     default:
       return state;

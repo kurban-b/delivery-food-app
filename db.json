@@ -3,84 +3,84 @@
     {
       "id": 1,
       "name": "Бургер 1",
-      "price" : 100,
+      "price": 100,
       "delivery": true,
       "img": null
     },
     {
       "id": 2,
       "name": "Бургер 2",
-      "price" : 140,
+      "price": 140,
       "delivery": true,
       "img": null
     },
     {
       "id": 3,
       "name": "Бургер 3",
-      "price" : 180,
+      "price": 180,
       "delivery": true,
       "img": null
     },
     {
       "id": 4,
       "name": "Твистер 1",
-      "price" : 124,
+      "price": 124,
       "delivery": true,
       "img": null
     },
     {
       "id": 5,
       "name": "Твистер 2",
-      "price" : 144,
+      "price": 144,
       "delivery": true,
       "img": null
     },
     {
       "id": 6,
       "name": "Твистер 3",
-      "price" : 144,
+      "price": 144,
       "delivery": true,
       "img": null
     },
     {
       "id": 7,
       "name": "Бургер 4",
-      "price" : 144,
+      "price": 144,
       "delivery": true,
       "img": null
     },
     {
       "id": 8,
       "name": "Твистер 4",
-      "price" : 144,
+      "price": 144,
       "delivery": true,
       "img": null
     },
     {
       "id": 9,
       "name": "Стрипсы 1",
-      "price" : 144,
+      "price": 144,
       "delivery": true,
       "img": null
     },
     {
       "id": 10,
       "name": "Стрипсы 2",
-      "price" : 144,
+      "price": 144,
       "delivery": true,
       "img": null
     },
     {
       "id": 11,
       "name": "Стрипсы 3",
-      "price" : 144,
+      "price": 144,
       "delivery": true,
       "img": null
     },
     {
       "id": 12,
       "name": "Стрипсы 3",
-      "price" : 144,
+      "price": 144,
       "delivery": true,
       "img": null
     }
@@ -89,17 +89,17 @@
     {
       "id": 1,
       "name": "Бургеры",
-      "products": [1,2,3,7]
+      "products": [1, 2, 3, 7]
     },
     {
       "id": 2,
       "name": "Твистеры",
-      "products": [4,5,6,8]
+      "products": [4, 5, 6, 8]
     },
     {
       "id": 3,
       "name": "Курица",
-      "products": [9,10,11,12]
+      "products": [9, 10, 11, 12]
     },
     {
       "id": 4,
@@ -129,7 +129,7 @@
     {
       "id": 9,
       "name": "Хиты",
-      "products": [5,3]
+      "products": [5, 3]
     },
     {
       "id": 10,
@@ -138,6 +138,23 @@
     }
   ],
   "orders": [
-
+    {
+      "productsId": [1, 1, 2, 3],
+      "sum": 520,
+      "address": {
+        "street": "Мельничная",
+        "house": "132"
+      },
+      "id": 1
+    },
+    {
+      "productsId": [1, 2, 2, 2, 2, 2, 3],
+      "sum": 980,
+      "address": {
+        "street": "swsws",
+        "house": "wswsw"
+      },
+      "id": 2
+    }
   ]
 }

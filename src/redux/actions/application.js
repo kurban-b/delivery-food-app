@@ -1,3 +1,3 @@
 export const changeStateDelivery = () => {
-  return {type: 'app/delivery/change'}
-}
+  return { type: "app/delivery/change" };
+};

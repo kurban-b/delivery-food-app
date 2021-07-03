@@ -11,6 +11,7 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-loading": "^2.0.3",
     "react-redux": "^7.2.4",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.2",
@@ -25,8 +26,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "concurrently \"npm start\" \"json-server --watch db.json --port 3010\""
+    "dev": "concurrently \"npm start\" \"nodemon server.js\"",
+    "prettify": "npx prettier --write ./src"
   },
+  "proxy": "http://localhost:3010",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -46,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "nodemon": "^2.0.9",
     "prettier": "2.3.2"
   }
 }

@@ -45,7 +45,7 @@ function ProductCard({ product }) {
               -
             </button>
             <div className={"sum"}>
-              {basket.filter(item => item.id === product.id).length}
+              {basket.filter((item) => item.id === product.id).length}
             </div>
             <button className={"btn"} onClick={handleAddProductByBasket}>
               +

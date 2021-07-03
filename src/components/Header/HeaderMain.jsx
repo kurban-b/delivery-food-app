@@ -1,10 +1,10 @@
-import React from 'react'
-import FormAddress from './FormAddress'
-import Switch from './Switch'
+import React from "react";
+import FormAddress from "./FormAddress";
+import Switch from "./Switch";
 
-function HeaderMain (props) {
+function HeaderMain(props) {
   return (
-    <div className={'header-main'}>
+    <div className={"header-main"}>
       <div className="left">
         <FormAddress />
       </div>
@@ -12,7 +12,7 @@ function HeaderMain (props) {
         <Switch />
       </div>
     </div>
-  )
+  );
 }
 
-export default HeaderMain
+export default HeaderMain;

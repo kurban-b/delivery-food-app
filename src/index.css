@@ -85,6 +85,7 @@ a {
 .address {
   display: flex;
   margin-bottom: 60px;
+  position: relative;
 }
 .address-subtitle {
   font-size: 32px;
@@ -148,7 +149,7 @@ a {
   margin: 0;
   color: #9d9d9d;
 }
-.main .navbar li a{
+.main .navbar li a {
   display: inline-block;
   cursor: pointer;
   padding: 16px 0;
@@ -334,4 +335,264 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.address-error {
+  position: absolute;
+  left: 40px;
+  bottom: -60px;
+}
+.address-error .block {
+  padding: 12px 20px;
+  background-color: #000;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.address-error .arrow {
+  margin: auto;
+  width: 10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid black;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+
+@media (min-width: 426px) and (max-width: 950px) {
+  .container {
+    width: 100%;
+    margin: auto;
+    position: relative;
+  }
+  .header-main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .form-address .title {
+    font-size: 45px;
+  }
+  .form-address .address-subtitle {
+    font-size: 20px;
+    justify-content: flex-end;
+    min-width: 80px;
+  }
+  .address-street,
+  .address-house {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15px;
+  }
+  .switch {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+  .productCard {
+    width: 30%;
+    margin: 0;
+  }
+  .switch .active,
+  .switch .deactivate {
+    width: 50%;
+  }
+  .products {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .nav {
+    display: none;
+  }
+  .category-box .title {
+    text-align: center;
+  }
+  .circle-wrap {
+    display: none;
+  }
+  .footer-main {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .list-menu {
+    width: 20%;
+  }
+  .socials-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .stores {
+    display: flex;
+    position: static;
+    width: 100%;
+    justify-content: center;
+  }
+  .stores-item {
+    margin: 20px 10px;
+  }
+}
+
+@media (min-width: 470px) and (max-width: 740px) {
+  .container {
+    width: 100%;
+    margin: auto;
+    position: relative;
+  }
+  .header-top {
+    margin-bottom: 20px;
+    padding-bottom: 0;
+  }
+  .header-main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .form-address .title {
+    font-size: 35px;
+  }
+  .form-address .address-subtitle {
+    font-size: 20px;
+    justify-content: flex-end;
+    min-width: 80px;
+  }
+  .address-street,
+  .address-house {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15px;
+  }
+  .address {
+    flex-wrap: wrap;
+  }
+  .switch {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+  .productCard {
+    width: 45%;
+    margin: 0;
+  }
+  .switch .active,
+  .switch .deactivate {
+    width: 50%;
+  }
+  .products {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .nav {
+    display: none;
+  }
+  .category-box .title {
+    text-align: center;
+  }
+  .circle-wrap {
+    display: none;
+  }
+  .footer-main {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .list-menu {
+    width: 20%;
+  }
+  .socials-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .stores {
+    display: flex;
+    position: static;
+    width: 100%;
+    justify-content: center;
+  }
+  .stores-item {
+    margin: 20px 10px;
+  }
+}
+@media (max-width: 469px) {
+  .container {
+    width: 100%;
+    margin: auto;
+    position: relative;
+  }
+  .header-top {
+    margin-bottom: 20px;
+    padding-bottom: 0;
+  }
+  .header-main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .form-address .title {
+    font-size: 35px;
+  }
+  .form-address .address-subtitle {
+    font-size: 20px;
+    justify-content: flex-end;
+    min-width: 80px;
+  }
+  .address-street,
+  .address-house {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15px;
+  }
+  .address {
+    flex-wrap: wrap;
+  }
+  .switch {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+  .productCard {
+    width: 90%;
+    margin: 0;
+    height: auto;
+  }
+  .switch .active,
+  .switch .deactivate {
+    width: 50%;
+  }
+  .products {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav {
+    display: none;
+  }
+  .category-box .title {
+    text-align: center;
+  }
+  .circle-wrap {
+    display: none;
+  }
+  .footer-main {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .list-menu {
+    width: 100%;
+    text-align: center;
+  }
+  .socials-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .stores {
+    display: flex;
+    position: static;
+    width: 100%;
+    justify-content: center;
+  }
+  .stores-item {
+    margin: 20px 10px;
+  }
 }

@@ -1,14 +1,14 @@
-import React from 'react'
-import Nav from './Nav'
-import Categories from './Categories'
+import React from "react";
+import Nav from "./Nav";
+import Categories from "./Categories";
 
-function Main (props) {
+function Main(props) {
   return (
-    <div className={'main'}>
+    <div className={"main"}>
       <Nav />
       <Categories />
     </div>
-  )
+  );
 }
 
-export default Main
+export default Main;

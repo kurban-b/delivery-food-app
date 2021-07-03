@@ -1,5 +1,8 @@
-import {createSelector} from 'reselect'
+import { createSelector } from "reselect";
 
-const delivery = state => state.applicationReducer.delivery
+const delivery = (state) => state.applicationReducer.delivery;
 
-export const deliverySelector = createSelector(delivery, (delivery) => delivery)
+export const deliverySelector = createSelector(
+  delivery,
+  (delivery) => delivery
+);
