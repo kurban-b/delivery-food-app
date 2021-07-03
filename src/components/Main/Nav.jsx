@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import { categoriesSelector } from '../../redux/selectors/categories'
 import NavItem from './Nav-Item'
 
-function Nav (props) {
+function Nav () {
   const categories = useSelector(categoriesSelector);
 
   return (

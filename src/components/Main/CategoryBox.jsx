@@ -1,10 +1,10 @@
 import React from 'react'
 import Products from './Products'
 
-function CategoryBox ({category}) {
+function CategoryBox ({category, index}) {
   return (
-    <div className={'category-box'}>
-      <div className={category.id % 2 === 0 ? 'edd' : 'odd'}>
+    <div className={'category-box'} id={`section${category.id}`}>
+      <div className={index % 2 === 0 ? 'edd' : 'odd'}>
         <h3 className={'title'}>
           {category.name}
         </h3>

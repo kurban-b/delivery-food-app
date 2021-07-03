@@ -4,13 +4,13 @@ import { categoriesSelector } from '../../redux/selectors/categories'
 import CategoryBox from './CategoryBox'
 
 function Categories () {
-  const categories = useSelector(categoriesSelector);
+  const categories = useSelector(categoriesSelector).filter(item => item.products.length > 0);
 
   return (
     <div className={'categories'}>
       {
-        categories.map(category => {
-          return <CategoryBox key={category.id} category={category}/>
+        categories.map((category, index) => {
+          return <CategoryBox key={category.id} category={category} index={index + 1}/>
         })
       }
     </div>

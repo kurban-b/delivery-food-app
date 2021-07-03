@@ -1,13 +1,21 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-scroll";
 
-function NavItem ({category}) {
+function NavItem({ category }) {
   return (
-    <li className={'navbar-item'}>
-      <a >
+    <li className={"navbar-item"}>
+      <Link
+        to={`section${category.id}`}
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-150}
+        duration={500}
+      >
         {category.name}
-      </a>
+      </Link>
     </li>
-  )
+  );
 }
 
-export default NavItem
+export default NavItem;

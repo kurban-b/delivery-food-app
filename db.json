@@ -2,49 +2,84 @@
   "products": [
     {
       "id": 1,
-      "name": "Гамбургер",
+      "name": "Бургер 1",
       "price" : 100,
       "delivery": true,
       "img": null
     },
     {
       "id": 2,
-      "name": "Чизбургер",
+      "name": "Бургер 2",
       "price" : 140,
       "delivery": true,
       "img": null
     },
     {
       "id": 3,
-      "name": "Бигмак",
+      "name": "Бургер 3",
       "price" : 180,
       "delivery": true,
       "img": null
     },
     {
       "id": 4,
-      "name": "Твистер",
+      "name": "Твистер 1",
       "price" : 124,
       "delivery": true,
       "img": null
     },
     {
       "id": 5,
-      "name": "Твистер острый",
+      "name": "Твистер 2",
       "price" : 144,
       "delivery": true,
       "img": null
     },
     {
       "id": 6,
-      "name": "Твистер с индейкой",
+      "name": "Твистер 3",
       "price" : 144,
       "delivery": true,
       "img": null
     },
     {
       "id": 7,
-      "name": "Бургер с индейкой",
+      "name": "Бургер 4",
+      "price" : 144,
+      "delivery": true,
+      "img": null
+    },
+    {
+      "id": 8,
+      "name": "Твистер 4",
+      "price" : 144,
+      "delivery": true,
+      "img": null
+    },
+    {
+      "id": 9,
+      "name": "Стрипсы 1",
+      "price" : 144,
+      "delivery": true,
+      "img": null
+    },
+    {
+      "id": 10,
+      "name": "Стрипсы 2",
+      "price" : 144,
+      "delivery": true,
+      "img": null
+    },
+    {
+      "id": 11,
+      "name": "Стрипсы 3",
+      "price" : 144,
+      "delivery": true,
+      "img": null
+    },
+    {
+      "id": 12,
+      "name": "Стрипсы 3",
       "price" : 144,
       "delivery": true,
       "img": null
@@ -59,12 +94,12 @@
     {
       "id": 2,
       "name": "Твистеры",
-      "products": [4,5,6]
+      "products": [4,5,6,8]
     },
     {
       "id": 3,
       "name": "Курица",
-      "products": []
+      "products": [9,10,11,12]
     },
     {
       "id": 4,
@@ -101,5 +136,8 @@
       "name": "Новое",
       "products": [6]
     }
+  ],
+  "orders": [
+
   ]
 }

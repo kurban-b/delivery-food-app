@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { loadingCategories } from '../redux/actions/categories'
 import { loadingProducts } from '../redux/actions/products'
+import Footer from './Footer'
 
 function App() {
   const dispatch = useDispatch();
@@ -17,6 +18,7 @@ function App() {
     <div className="container">
       <Header />
       <Main />
+      <Footer />
     </div>
   );
 }

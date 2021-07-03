@@ -18,3 +18,17 @@ export const loadingProducts = () => {
     }
   }
 }
+
+export const addProductByBasket = (product) => {
+  return {
+    type: 'basket/add',
+    payload: product
+  }
+}
+
+export const deleteProductFromBasket = (product) => {
+  return {
+    type: 'basket/delete',
+    payload: product
+  }
+}
