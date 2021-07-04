@@ -22,10 +22,23 @@ img {
 a {
   color: inherit;
 }
-.container {
+
+.header {
+  position: relative;
   max-width: 1255px;
   margin: auto;
-  position: relative;
+}
+.nav {
+  max-width: 1255px;
+  margin: auto;
+}
+.footer {
+  max-width: 1255px;
+  margin: auto;
+}
+.category-box .cont {
+  max-width: 1255px;
+  margin: auto;
 }
 .header-top {
   padding-bottom: 20px;
@@ -171,15 +184,16 @@ a {
 .products {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .productCard {
-  width: 288px;
+  width: 280px;
   height: 360px;
   padding: 16px 40px;
   text-align: center;
   border-radius: 8px;
   transition: 300ms;
-  margin: 0 18px 40px 18px;
+  margin: 0 16px 40px 16px;
 }
 .productCard .img img {
   transition: 300ms;

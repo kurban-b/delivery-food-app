@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "./Nav";
 import Categories from "./Categories";
 
-function Main(props) {
+function Main() {
   return (
     <div className={"main"}>
       <Nav />

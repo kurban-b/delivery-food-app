@@ -1,5 +1,4 @@
 import React from "react";
-import Product from "../../assets/Burger.png";
 import { useDispatch, useSelector } from "react-redux";
 import AddIcon from "../../assets/icons/add.svg";
 import {
@@ -11,6 +10,7 @@ import {
   deleteProductFromBasket,
 } from "../../redux/actions/products";
 import { basketSelector } from "../../redux/selectors/products";
+import PropTypes from "prop-types";
 
 function ProductCard({ product }) {
   const dispatch = useDispatch();
@@ -38,7 +38,7 @@ function ProductCard({ product }) {
         {news.products.some((id) => id === product.id) && (
           <div className="badge new">Новое</div>
         )}
-        <img src={Product} alt="" />
+        <img src={product.img} alt="" />
         {hasProductByPasket ? (
           <div className={"counter"}>
             <button className={"btn"} onClick={handleDeleteProductFromBasket}>
@@ -62,5 +62,9 @@ function ProductCard({ product }) {
     </div>
   );
 }
+
+ProductCard.propTypes = {
+  product: PropTypes.object.isRequired,
+};
 
 export default ProductCard;

@@ -40,6 +40,7 @@ export const addOrder = (sum, address, basket) => {
       const json = await res.json();
       dispatch({
         type: "order/add/success",
+        payload: json,
       });
     } catch (e) {
       dispatch({

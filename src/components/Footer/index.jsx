@@ -6,7 +6,7 @@ import OkIcon from "../../assets/icons/icon_ok copy 3.svg";
 import GooglePay from "../../assets/Group 13.png";
 import AppStore from "../../assets/Download_on_the_App_Store_Badge_RU_RGB_blk_100317.png";
 
-function Footer(props) {
+function Footer() {
   return (
     <div className={"footer"}>
       <div className="footer-top">

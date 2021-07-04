@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { productsSelector } from "../../redux/selectors/products";
 import ProductCard from "./ProductCard";
+import PropTypes from "prop-types";
 
 function Products({ categoryIdArray }) {
   const products = useSelector(productsSelector);
@@ -18,5 +19,9 @@ function Products({ categoryIdArray }) {
     </div>
   );
 }
+
+Products.propTypes = {
+  categoryIdArray: PropTypes.array.isRequired,
+};
 
 export default Products;

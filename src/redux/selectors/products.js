@@ -4,10 +4,18 @@ const products = (state) => state.productsReducer.products;
 const basket = (state) => state.productsReducer.basket;
 const address = (state) => state.productsReducer.address;
 const loadingAddOrder = (state) => state.productsReducer.loadingAddOrder;
+const delivery = (state) => state.applicationReducer.delivery;
 
 export const productsSelector = createSelector(
-  products,
-  (products) => products
+  [products, delivery],
+  (products, delivery) => {
+    return products.filter((item) => {
+      if (delivery) {
+        return item.delivery;
+      }
+      return item;
+    });
+  }
 );
 
 export const basketSelector = createSelector(basket, (basket) => basket);

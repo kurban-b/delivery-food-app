@@ -2,7 +2,7 @@ import React from "react";
 import FormAddress from "./FormAddress";
 import Switch from "./Switch";
 
-function HeaderMain(props) {
+function HeaderMain() {
   return (
     <div className={"header-main"}>
       <div className="left">

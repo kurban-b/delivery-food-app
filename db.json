@@ -5,96 +5,110 @@
       "name": "Бургер 1",
       "price": 100,
       "delivery": true,
-      "img": null
+      "img": "Burger.png"
     },
     {
       "id": 2,
       "name": "Бургер 2",
       "price": 140,
       "delivery": true,
-      "img": null
+      "img": "Burger.png"
     },
     {
       "id": 3,
       "name": "Бургер 3",
       "price": 180,
       "delivery": true,
-      "img": null
+      "img": "Burger.png"
     },
     {
       "id": 4,
       "name": "Твистер 1",
       "price": 124,
       "delivery": true,
-      "img": null
+      "img": "Tvister.png"
     },
     {
       "id": 5,
       "name": "Твистер 2",
       "price": 144,
       "delivery": true,
-      "img": null
+      "img": "Tvister.png"
     },
     {
       "id": 6,
       "name": "Твистер 3",
       "price": 144,
       "delivery": true,
-      "img": null
+      "img": "Tvister.png"
     },
     {
       "id": 7,
       "name": "Бургер 4",
       "price": 144,
       "delivery": true,
-      "img": null
+      "img": "Burger.png"
     },
     {
       "id": 8,
       "name": "Твистер 4",
       "price": 144,
       "delivery": true,
-      "img": null
+      "img": "Tvister.png"
     },
     {
       "id": 9,
       "name": "Стрипсы 1",
       "price": 144,
       "delivery": true,
-      "img": null
+      "img": "Chicken.png"
     },
     {
       "id": 10,
       "name": "Стрипсы 2",
       "price": 144,
       "delivery": true,
-      "img": null
+      "img": "Chicken.png"
     },
     {
       "id": 11,
       "name": "Стрипсы 3",
       "price": 144,
       "delivery": true,
-      "img": null
+      "img": "Chicken.png"
     },
     {
       "id": 12,
       "name": "Стрипсы 3",
       "price": 144,
       "delivery": true,
-      "img": null
+      "img": "Chicken.png"
+    },
+    {
+      "id": 13,
+      "name": "Бургер 5",
+      "price": 144,
+      "delivery": false,
+      "img": "Burger.png"
+    },
+    {
+      "id": 14,
+      "name": "Твистер 5",
+      "price": 144,
+      "delivery": false,
+      "img": "Tvister.png"
     }
   ],
   "categories": [
     {
       "id": 1,
       "name": "Бургеры",
-      "products": [1, 2, 3, 7]
+      "products": [1, 2, 3, 7, 13]
     },
     {
       "id": 2,
       "name": "Твистеры",
-      "products": [4, 5, 6, 8]
+      "products": [4, 5, 6, 8, 14]
     },
     {
       "id": 3,
@@ -129,12 +143,12 @@
     {
       "id": 9,
       "name": "Хиты",
-      "products": [5, 3]
+      "products": [5, 3, 11]
     },
     {
       "id": 10,
       "name": "Новое",
-      "products": [6]
+      "products": [6, 2]
     }
   ],
   "orders": [

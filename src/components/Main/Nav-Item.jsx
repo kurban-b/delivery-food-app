@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import PropTypes from "prop-types";
 
 function NavItem({ category }) {
   return (
@@ -17,5 +18,9 @@ function NavItem({ category }) {
     </li>
   );
 }
+
+NavItem.propTypes = {
+  category: PropTypes.object.isRequired,
+};
 
 export default NavItem;
